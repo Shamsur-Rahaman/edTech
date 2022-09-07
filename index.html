@@ -52,16 +52,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link" href="#courses">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Success</a>
+                        <a class="nav-link" href="#success">Success</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <form class="d-flex .float-lg-end .float-md-end" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -145,7 +145,7 @@
 
     <!-- Popular Courses Start -->
 
-    <div class="container course-section mb-5">
+    <div class="container course-section mb-5" id="courses">
         <h1 class="text-center">Discover our Popular<br></h1>
         <h1 class="text-center">Courses</h1>
         <p class="text-center">Chech out our courses, To keep you ahead with
@@ -271,7 +271,7 @@
 
     <!-- Company Info Start -->
 
-    <div class="container mb-5">
+    <div class="container mb-5" id="about">
         <div class="row m-0 p-0">
             <div class="col-lg-5 col-md-5 col-md-12 m-0 p-0">
                 <img src="images/working.png" alt="" class="img img-fluid w-100">
@@ -331,15 +331,54 @@
                 </p>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <a href="registration.html" class="ready-to-join-btn">Register Now</a>
+                <a href="registration.html" class="ready-to-join-btn" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Register Now</a>
             </div>
+
+            <!-- Modal Start -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <form class="form-section">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email ">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="password">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-danger" data-bs-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
         </div>
     </div>
 
     <!-- Ready to Join End -->
 
     <!-- Success Start -->
-    <div class="container mb-5 successful-students">
+    <div class="container mb-5 successful-students" id="success">
         <h1>Meet Our Success<br>Students</h1>
         <p>Every year we produce talents, hear their story<br>
             at section below</p>
@@ -396,7 +435,7 @@
 
     <!-- Students Feedback Start -->
 
-    <div class="container stu-feedback">
+    <div class="container stu-feedback" id="about">
         <h1 class="text-center">Some Students Feedback</h1>
         <p class="text-center">View students testimony who ace job interview with our intensive care<br> Our strong
             guideline will make you
